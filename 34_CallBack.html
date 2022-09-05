@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Fun1() {
+            document.getElementById("box1").innerHTML = "Calling First Function";
+        }
+
+        function Fun2() {
+            document.getElementById("box1").innerHTML = "Calling Second Function";
+        }
+
+        let calculator = {
+            result: 0,
+            show() {
+                document.getElementById("box2").innerHTML = this.result;
+            },
+
+            calculate() {
+                var inp1 = document.getElementById("inp1").value;
+                inp1 = Number(inp1);
+                var inp2 = document.getElementById("inp2").value;
+                inp2 = Number(inp2);
+                this.result = inp1 + inp2;
+            }
+        }
+
+    </script>
+    <style>
+        .container {
+            margin: 50px auto;
+            pad: 20px;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <div class="container">
+        <div id="box1"></div>
+        <button onclick="Fun1()">Call First Function</button>
+        <button onclick="Fun2()">Call Second Function</button>
+    </div>
+    <hr>
+    <div class="container">
+        <div id="box2"></div>
+        <input type="" name="" id="inp1">+<input type="text" name="" id="inp2"><br>
+        <button onclick="calculator.calculate()">Calculate</button> <button onclick="calculator.show()">Show
+            Answer</button>
+    </div>
+</body>
+
+</html>
