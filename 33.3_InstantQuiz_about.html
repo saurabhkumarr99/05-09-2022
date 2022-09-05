@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33_InstantQuiz.css">
+    <script src="33_InstantQuiz.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instant Quiz</h1>
+        <div class="container1">
+
+            <div id="logo">Logo</div>
+
+            <div id="navbar">
+                <nav>
+                    <a href="http://127.0.0.1:5500/33.1_InstantQuiz_home.html">Admin Panel</a>                    
+                    <a href="http://127.0.0.1:5500/33.2_InstantQuiz_student.html">Student Panel</a>
+                    <a href="http://127.0.0.1:5500/33.3_InstantQuiz_about.html">About Project</a>
+                </nav>
+                </nav>
+            </div>
+
+            <div id="social">
+                <nav>
+                    <a href="">twitter</a>
+                    <a href="">facebook</a>
+                    <a href="">Instagram</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+
+        <main>
+
+            <div class="container2">
+                <h3>Generate Request</h3>
+                <hr>
+                <div class="box1">
+                    <form action="" method="post">
+                        <input type="hidden" id="custId" name="FirstCustomer" value="001">
+                        Category :
+                        <select id="category">
+                            <option value="ctg1">Category1</option>
+                            <option value="ctg2" selected>Category2</option>
+                            <option value="ctg3">Category3</option>
+                            <option value="ctg4">Category4</option>
+                            <option value="ctg5">Category5</option>
+                        </select><br>
+                        Sub Category :
+                        <select id="SubCategory">
+                            <option value="ctg1">Sub Category1</option>
+                            <option value="ctg2" selected>Sub Category2</option>
+                            <option value="ctg3">Sub Category3</option>
+                            <option value="ctg4">Sub Category4</option>
+                            <option value="ctg5">Sub Category5</option>
+                        </select><br>
+                        Request To :
+                        <select id="Personal">
+                            <option value="ctg1">Personal1</option>
+                            <option value="ctg2" selected>Personal2</option>
+                            <option value="ctg3">Personal3</option>
+                            <option value="ctg4">Personal4</option>
+                            <option value="ctg5">Personal5</option>
+                        </select><br>
+                        <fieldset>
+                            <legend>Reason :</legend>
+                            <textarea name="message" rows="10" cols="60"></textarea>
+                        </fieldset>
+                        
+                    </form>
+                    <button onclick="submit()">Request</button>
+                </div>
+
+            </div>
+
+            <div class="container2">
+                <h3>Responses</h3>
+                <hr>
+                <div class="box">
+                    <table style="margin: 5px auto;">
+                        <thead>
+                            <tr>
+                                <th>Sr.</th>
+                                <th>Category</th>
+                                <th>Request</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <div class="response"></div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+    <footer>
+        <hr>
+        <p>Footer -Created by Saurabh Kumar Rai</p>
+        <address>
+            <p>Youtube|twitter|Instagram|Facebook</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>
